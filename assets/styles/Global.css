@@ -34,23 +34,23 @@ div.three{
 }
 
 a{
-    font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: 400ms all ease-in-out;
     margin-left: 10px;
-    border-radius: 0.2rem;
+    font-size: 22px;
+    
 }
 
 a:hover{
-    background-color: rgb(207, 204, 204);
+    background-color: black;
 }
 
 nav{
     height: 4vh;
     width: 100vw;
     position: fixed;
-    background-color: rgba(0,0,0,0.825);
+    background-color: rgba(71, 70, 70, 0.825);
     display: flex;
     justify-content: center;
     align-items: center;
