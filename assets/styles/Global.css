@@ -9,7 +9,9 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Mukta',sans-serif;
+    height: 100vh;
+    
 }
 
 p{
@@ -20,41 +22,60 @@ div{
     height: 100vh;
 }
 
-div.one{
-    background: red;
+section{
+    height: 100vh;
 }
 
-div.two{
-    background-color: aqua;
-
-}
-
-div.three{
-    background-color: blueviolet;
-}
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
     transition: 400ms all ease-in-out;
-    margin-left: 10px;
     font-size: 22px;
+
+    display: block;
+    padding: 20px;
+    position: relative;
     
 }
 
-a:hover{
-    background-color: black;
-}
 
 nav{
-    height: 4vh;
+    height: 10vh;
     width: 100vw;
     position: fixed;
-    background-color: rgba(71, 70, 70, 0.825);
+    background-color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+
+section{
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    background-repeat: no-repeat;
+
+}
+
+body nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 10%;
+    width: 0;
+    background-color: black;
+    height: 0.2rem;
+    transition: all 400ms ease-in-out;
+}
+
+body nav a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+
+
+
 
 
 
